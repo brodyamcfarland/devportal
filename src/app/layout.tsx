@@ -7,8 +7,9 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-     title: "Next JS 13 Template",
-     description: "Boiler with Dark Mode + More",
+     title: "Dev Portal",
+     description:
+          "A talent acquisition and portfolio website for software developers and recruiters.",
 };
 
 export default function RootLayout({

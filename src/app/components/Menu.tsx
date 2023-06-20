@@ -33,25 +33,28 @@ const Menu = ({ setShowMenu, menuButtonRef }: MenuProps) => {
           };
      }, [setShowMenu, menuButtonRef]);
 
+     // When you create logins, make sure Logout button goes to the bottom of nav
+
      return (
           <nav
                ref={menuRef}
-               className="absolute flex flex-col gap-4 z-20 dark:bg-white/10 bg-black/40 backdrop-blur-sm shadow-md w-32 top-[76px] right-6 p-4 rounded-lg text-sm items-center justify-center"
+               className="absolute flex flex-col gap-4 z-20 dark:bg-white/10 bg-black/40 backdrop-blur-lg shadow-md w-full md:rounded-t-lg md:w-[20rem] top-[96px] right-0 md:right-6 p-4 rounded-b-lg text-sm items-center justify-center"
           >
                <Link href={"/"} className="menuLinks">
                     Home
                </Link>
                <Link href={"/"} className="menuLinks">
-                    Link 1
+                    Sign In
+               </Link>
+               {/* {Make Different Menu Buttons for Dev Profile vs Recruiter Profile} */}
+               <Link href={"/"} className="menuLinks">
+                    Profile
                </Link>
                <Link href={"/"} className="menuLinks">
-                    Link 2
+                    Find Devs
                </Link>
                <Link href={"/"} className="menuLinks">
-                    Link 3
-               </Link>
-               <Link href={"/"} className="menuLinks">
-                    Link 4
+                    Find Jobs
                </Link>
           </nav>
      );
