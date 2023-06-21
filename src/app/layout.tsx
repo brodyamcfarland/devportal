@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
      title: "Dev Portal",
      description:
-          "A talent acquisition and portfolio website for software developers and recruiters.",
+          "A talent acquisition and portfolio website for software developers and employers.",
 };
 
 export default function RootLayout({

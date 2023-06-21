@@ -6,7 +6,6 @@ import { TbMenu2 } from "react-icons/tb";
 import { MdOutlineCancel } from "react-icons/md";
 import { useRef, useState } from "react";
 import Menu from "./Menu";
-import Image from "next/image";
 
 const Header = () => {
      const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -19,13 +18,21 @@ const Header = () => {
                     className="flex flex-row gap-4 items-center justify-center opacity-70 hover:opacity-100 duration-300"
                     title="Home"
                >
-                    <Image
-                         src={"/devport.png"}
-                         alt="logo"
-                         height={500}
-                         width={500}
-                         className="rounded-full h-12 w-12 object-contain border-2"
-                    />
+                    <div className="flex relative">
+                         <div className="h-12 w-12 border-2 border-black dark:border-white rounded-full relative dark:opacity-60 animate-slowspin">
+                              <div className="absolute h-12 w-12 border right-[1px] rounded-full animate-slowspin border-gray-300 blur-lg" />
+                              <div className="absolute h-12 w-12 border left-[1px] rounded-full animate-slowspin border-gray-500" />
+                              <div className="absolute h-12 w-12 border top-[1px] rounded-full animate-slowspin border-gray-700" />
+                              <div className="absolute h-12 w-12 border bottom-[1px] rounded-full animate-slowspin border-gray-200 blur-lg" />
+                              <div className="absolute h-12 w-12 border-2 rounded-full animate-slowspin border-gray-200 blur-sm" />
+                         </div>
+
+                         <div className="absolute flex items-center justify-center h-12 w-12">
+                              <span className="text-md dark:opacity-60">
+                                   [ dp ]
+                              </span>
+                         </div>
+                    </div>
                     <span className="tracking-widest text-lg">Dev Portal</span>
                </Link>
                <div className="flex flex-row gap-4 items-center justify-center">

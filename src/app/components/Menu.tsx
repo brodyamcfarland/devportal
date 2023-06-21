@@ -38,13 +38,16 @@ const Menu = ({ setShowMenu, menuButtonRef }: MenuProps) => {
      return (
           <nav
                ref={menuRef}
-               className="absolute flex flex-col gap-4 z-20 dark:bg-white/10 bg-black/40 backdrop-blur-lg shadow-md w-full md:rounded-t-lg md:w-[20rem] top-[96px] right-0 md:right-6 p-4 rounded-b-lg text-sm items-center justify-center"
+               className="absolute flex flex-col gap-4 z-20 dark:bg-white/20 bg-black/40 backdrop-blur-lg shadow-md w-full md:rounded-t-lg md:w-[20rem] top-[96px] right-0 md:right-6 p-4 rounded-b-lg text-sm items-center justify-center"
           >
                <Link href={"/"} className="menuLinks">
                     Home
                </Link>
                <Link href={"/"} className="menuLinks">
                     Sign In
+               </Link>
+               <Link href={"/"} className="menuLinks">
+                    Create Account
                </Link>
                {/* {Make Different Menu Buttons for Dev Profile vs Recruiter Profile} */}
                <Link href={"/"} className="menuLinks">
