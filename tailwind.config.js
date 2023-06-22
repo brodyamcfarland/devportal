@@ -8,7 +8,7 @@ module.exports = {
      darkMode: "class",
      theme: {
           animation: {
-               slowspin: "spin 12s linear infinite",
+               slowspin: "spin 20s linear infinite",
           },
           extend: {
                backgroundImage: {
