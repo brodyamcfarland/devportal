@@ -2,7 +2,7 @@ import DevAccountForm from "../components/DevAccountForm";
 
 export default function CreateDevAccount() {
      return (
-          <main className="flex flex-col md:flex-row mx-auto mainContainer 2xl:max-w-6xl xl:max-w-4xl lg:max-w-3x flex-1 items-center gap-2 p-2">
+          <main className="flex flex-col md:flex-row mx-auto mainContainer xl:max-w-4xl lg:max-w-3x flex-1 items-center gap-2 p-2">
                <div className="flex relative mb-5 md:mb-10 mt-5 mx-10">
                     <div className="h-36 w-36 md:h-64 md:w-64 border-2 border-black dark:border-white rounded-full relative dark:opacity-60 animate-slowspin ">
                          <div className="absolute h-36 w-36 md:h-64 md:w-64 border right-1 rounded-full animate-slowspin border-red-300 blur-lg" />
@@ -33,8 +33,8 @@ export default function CreateDevAccount() {
                          </span>
                     </div>
                </div>
-               <div className="mx-10 flex flex-col flex-1 items-center h-full overflow-y-auto">
-                    <h1 className="dark:opacity-70 tracking-wide py-2 text-lg font-bold">
+               <div className="mx-10 flex flex-col flex-1 items-center py-4 h-full overflow-y-auto">
+                    <h1 className="dark:opacity-70 tracking-wide pb-2 text-lg font-bold">
                          Create Developer Account
                     </h1>
                     <DevAccountForm />

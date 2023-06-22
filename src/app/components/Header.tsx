@@ -12,7 +12,7 @@ const Header = () => {
      const menuButtonRef = useRef<HTMLButtonElement>(null);
 
      return (
-          <header className="flex justify-between w-full items-center max-w-7xl mx-auto py-6 px-6 sticky top-0 z-50">
+          <header className="flex justify-between w-full items-center max-w-7xl mx-auto py-6 px-6 sticky top-0 z-50 backdrop-blur-md">
                <Link
                     href={"/"}
                     className="flex flex-row gap-4 items-center justify-center opacity-70 hover:opacity-100 duration-300"
@@ -41,6 +41,7 @@ const Header = () => {
                          <button
                               onClick={() => setShowMenu(false)}
                               className="opacity-70 hover:opacity-100 duration-300"
+                              title="Close Menu"
                          >
                               <MdOutlineCancel size={25} />
                          </button>
@@ -48,6 +49,7 @@ const Header = () => {
                          <button
                               onClick={() => setShowMenu(true)}
                               className="opacity-70 hover:opacity-100 duration-300"
+                              title="Menu"
                          >
                               <TbMenu2 size={25} />
                          </button>
