@@ -1,6 +1,8 @@
+import EmployerAccountForm from "../components/EmplyerAccountForm";
+
 export default function CreateEmployerAccount() {
      return (
-          <main className="flex flex-col md:flex-row mx-auto mainContainer 2xl:max-w-6xl xl:max-w-4xl lg:max-w-3x flex-1 items-center gap-2 p-2">
+          <main className="flex flex-col md:flex-row mx-auto mainContainer xl:max-w-4xl lg:max-w-3x flex-1 items-center gap-2 p-2">
                <div className="flex relative mb-10 mt-5 mx-10">
                     <div className="h-36 w-36 md:h-64 md:w-64 border-2 border-black dark:border-white rounded-full relative dark:opacity-60 animate-slowspin ">
                          <div className="absolute h-36 w-36 md:h-64 md:w-64 border right-1 rounded-full animate-slowspin border-blue-300 blur-lg" />
@@ -31,10 +33,11 @@ export default function CreateEmployerAccount() {
                          </span>
                     </div>
                </div>
-               <div className="mainContainer mx-10 flex flex-col flex-1">
-                    <h1 className="opacity-80 tracking-wide py-2">
-                         Create Developer Account
+               <div className="mx-10 flex flex-col flex-1 items-center py-4 h-full overflow-y-auto">
+                    <h1 className="dark:opacity-70 tracking-wide pb-2 text-lg font-bold">
+                         Create Employer Account
                     </h1>
+                    <EmployerAccountForm />
                </div>
           </main>
      );
