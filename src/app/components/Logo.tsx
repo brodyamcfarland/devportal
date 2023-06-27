@@ -10,33 +10,50 @@ const Logo = ({ color, text }: LogoProps) => {
                     <div
                          className={`absolute h-36 w-36 md:h-64 md:w-64 border right-1 rounded-full animate-slowspin ${
                               color === "red" && "border-red-300"
-                         } ${color === "blue" && "border-blue-300"} blur-lg`}
+                         } ${color === "blue" && "border-blue-300"}
+                         ${color === "gray" && "border-gray-300"}  ${
+                              color === "gray" && "dark:border-gray-300"
+                         } blur-lg`}
                     />
                     <div
                          className={`absolute h-36 w-36 md:h-64 md:w-64 border left-1 rounded-full animate-slowspin ${
                               color === "red" && "border-red-500"
-                         } ${color === "blue" && "border-blue-500"}`}
+                         } ${color === "blue" && "border-blue-500"} ${
+                              color === "gray" && "border-gray-500"
+                         } ${color === "gray" && "dark:border-gray-500"}`}
                     />
                     <div
                          className={`absolute h-36 w-36 md:h-64 md:w-64 border top-1 rounded-full animate-slowspin ${
                               color === "red" && "border-red-700"
-                         } ${color === "blue" && "border-blue-700"}`}
+                         } ${color === "blue" && "border-blue-700"} ${
+                              color === "gray" && "border-gray-700"
+                         } ${color === "gray" && "dark:border-gray-700"}`}
                     />
                     <div
                          className={`absolute h-36 w-36 md:h-64 md:w-64 border bottom-1 rounded-full animate-slowspin ${
                               color === "red" && "border-red-200"
-                         } ${color === "blue" && "border-blue-200"} blur-lg`}
+                         } ${color === "blue" && "border-blue-200"} ${
+                              color === "gray" && "border-gray-200"
+                         } ${
+                              color === "gray" && "dark:border-gray-200"
+                         } blur-lg`}
                     />
                     <div
                          className={`absolute h-36 w-36 md:h-64 md:w-64 border-2 rounded-full animate-slowspin ${
                               color === "red" && "border-red-800"
-                         } ${color === "blue" && "border-blue-800"} blur-sm`}
+                         } ${color === "blue" && "border-blue-800"} ${
+                              color === "gray" && "border-gray-800"
+                         } ${
+                              color === "gray" && "dark:border-gray-800"
+                         } blur-sm`}
                     />
                     <div
                          className={`absolute h-1 w-1 border-4 rounded-full animate-slowspin ${
                               color === "red" && "dark:border-red-400"
+                         } ${color === "blue" && "dark:border-blue-400"} ${
+                              color === "gray" && "border-gray-300"
                          } ${
-                              color === "blue" && "dark:border-blue-400"
+                              color === "gray" && "dark:border-gray-400"
                          } blur-sm top-10`}
                     />
                </div>
@@ -46,8 +63,10 @@ const Logo = ({ color, text }: LogoProps) => {
                               color === "red" && "border-red-600"
                          } ${color === "blue" && "border-blue-600"} ${
                               color === "red" && "border-red-600"
+                         } ${color === "blue" && "border-blue-600"} ${
+                              color === "gray" && "dark:border-gray-600"
                          } ${
-                              color === "blue" && "border-blue-600"
+                              color === "gray" && "border-gray-600"
                          } blur-sm top-10 left-24 md:top-20 md:left-52 animate-pulse`}
                     />
                </div>
@@ -57,8 +76,10 @@ const Logo = ({ color, text }: LogoProps) => {
                               color === "red" && "border-red-600"
                          } ${color === "blue" && "border-blue-600"} ${
                               color === "red" && "border-red-600"
+                         } ${color === "blue" && "border-blue-600"} ${
+                              color === "gray" && "dark:border-gray-600"
                          } ${
-                              color === "blue" && "border-blue-600"
+                              color === "gray" && "border-gray-600"
                          } blur-sm top-10 -left-8 md:top-20 md:-left-10 animate-pulse`}
                     />
                </div>
@@ -68,8 +89,10 @@ const Logo = ({ color, text }: LogoProps) => {
                               color === "red" && "dark:border-red-600"
                          } ${color === "blue" && "dark:border-blue-600"} ${
                               color === "red" && "border-red-600"
+                         } ${color === "blue" && "border-blue-600"} ${
+                              color === "gray" && "dark:border-gray-600"
                          } ${
-                              color === "blue" && "border-blue-600"
+                              color === "gray" && "border-gray-600"
                          } blur-sm top-10 left-24 md:top-20 md:left-50 animate-pulse`}
                     />
                </div>
@@ -79,8 +102,10 @@ const Logo = ({ color, text }: LogoProps) => {
                               color === "red" && "dark:border-red-500"
                          } ${color === "blue" && "dark:border-blue-500"} ${
                               color === "red" && "border-red-500"
+                         } ${color === "blue" && "border-blue-500"} ${
+                              color === "gray" && "dark:border-gray-500"
                          } ${
-                              color === "blue" && "border-blue-500"
+                              color === "gray" && "border-gray-500"
                          } blur-sm top-10 left-30 md:top-20 md:left-20 animate-pulse`}
                     />
                </div>
@@ -91,9 +116,9 @@ const Logo = ({ color, text }: LogoProps) => {
                     <span
                          className={`text-[10px] md:text-xs dark:opacity-60 ${
                               color === "red" && "text-red-500"
-                         } ${
-                              color === "blue" && "text-blue-500"
-                         } font-bold tracking-wide`}
+                         } ${color === "blue" && "text-blue-500"} ${
+                              color === "gray" && "text-gray-500"
+                         } font-bold tracking-widest`}
                     >
                          {text}
                     </span>
