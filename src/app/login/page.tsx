@@ -1,21 +1,16 @@
 "use client";
 
-import { createClient } from "@supabase/supabase-js";
 import { useState } from "react";
 import Logo from "../components/Logo";
 import { TbCircleFilled } from "react-icons/tb";
 import { AiFillGithub } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
 import Link from "next/link";
+import { supabase } from "../supabaseCLI/client";
 // Set up Github and Google Sign in with email sign in as a backup
 const Login = () => {
      const [email, setEmail] = useState<string>("");
      const [password, setPassword] = useState<string>("");
-
-     const supabase = createClient(
-          process.env.NEXT_PUBLIC_SUPABASE_URL!,
-          process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-     );
 
      const signInWithEmail = async () => {
           const { data, error } = await supabase.auth.signInWithPassword({
