@@ -6,11 +6,15 @@ import { TbCircleFilled } from "react-icons/tb";
 import { AiFillGithub } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
 import Link from "next/link";
-import { supabase } from "../supabaseCLI/client";
+import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
+import { Database } from "../../../types/supabase";
+
 // Set up Github and Google Sign in with email sign in as a backup
 const Login = () => {
      const [email, setEmail] = useState<string>("");
      const [password, setPassword] = useState<string>("");
+
+     const supabase = createClientComponentClient<Database>();
 
      const signInWithEmail = async () => {
           const { data, error } = await supabase.auth.signInWithPassword({

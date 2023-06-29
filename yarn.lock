@@ -1570,7 +1570,7 @@ __metadata:
     react: 18.2.0
     react-dom: 18.2.0
     react-icons: ^4.9.0
-    supabase: ^1.75.1
+    supabase: ">=1.8.1"
     tailwind-scrollbar: ^3.0.4
     tailwindcss: 3.3.2
     typescript: 5.1.3
@@ -2307,16 +2307,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"supabase@npm:^1.75.1":
-  version: 1.75.1
-  resolution: "supabase@npm:1.75.1"
+"supabase@npm:>=1.8.1":
+  version: 1.75.2
+  resolution: "supabase@npm:1.75.2"
   dependencies:
     bin-links: ^4.0.1
     node-fetch: ^3.2.10
     tar: 6.1.15
   bin:
     supabase: bin/supabase
-  checksum: c39818e295c1057174faf10573b5dc4e92ca1308fa22788f52bb23a02b4893e0d874136489b9e0029c7d0d499c6f8e6a6598a99487667cf4523b445accb5f8eb
+  checksum: 45ed5995dcfd14e354b41232a8a000aaeedd800bd37571dadb32ff2ec60ea84cedc009b85b4fadecb84cf64f32b676837138fec502961dbebe5557183a975776
   languageName: node
   linkType: hard
 
